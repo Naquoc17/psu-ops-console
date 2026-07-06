@@ -1,3 +1,6 @@
 ﻿New-PSUEndpoint -Url "/hello" -Method @('GET') -Endpoint {
-"Hello from PSU"
+  @{
+  Message = "Hello from PSU"
+  Time = Get-Date
+  }
 }
